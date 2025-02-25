@@ -5,7 +5,7 @@ django-cors-headers>=4.3
 
 # Database (Use as per requirement)
 psycopg2>=2.9  # PostgreSQL (if using PostgreSQL)
-sqlite3  # Default Django SQLite database (No need to install separately)
+
 
 # Serializer & Authentication
 djangorestframework-simplejwt>=5.3  # JWT authentication
