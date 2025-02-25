@@ -31,12 +31,14 @@ jobs:
 
     - name: Run Migrations
       run: |
+        cd ..
         cd Django_React_App
         cd Backend
         python manage.py migrate
 
     - name: Collect Static Files
       run: |
+        
         cd Django_React_App
         cd Backend
         python manage.py collectstatic --noinput
