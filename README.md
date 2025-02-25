@@ -1,6 +1,6 @@
 
 
-```markdown
+
 #  Full Stack Web Application (Django & React)  
 
 This project is a **full-stack web application** built using **Django for the backend** and **React.js for the frontend**. It includes page navigation with React Router, a Material UI navbar, and basic CRUD operations.  
