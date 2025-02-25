@@ -48,9 +48,9 @@ This project is a **full-stack web application** built using **Django for the ba
    - Adding forms to the create page  
    - Submitting form data to the backend  
 
-## 🚀 Getting Started  
+##  Getting Started  
 
-### 🖥️ Backend Setup (Django)  
+###  Backend Setup (Django)  
 
 1. Create and activate a virtual environment:  
    ```sh
@@ -86,13 +86,13 @@ This project is a **full-stack web application** built using **Django for the ba
    npm start
    ```
 
-## 🛠️ Technologies Used  
+##  Technologies Used  
 
 - **Backend:** Django, Django REST Framework (DRF)  
 - **Frontend:** React.js, React Router, Material UI  
 - **Database:** SQLite/PostgreSQL (configurable)  
 
-## 📌 Features  
+##  Features  
 
 - Full authentication system  
 - React Router for seamless navigation  
