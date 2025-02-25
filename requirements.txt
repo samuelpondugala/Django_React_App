@@ -1,0 +1,21 @@
+# Django and REST Framework
+Django>=4.2
+djangorestframework>=3.14
+django-cors-headers>=4.3
+
+# Database (Use as per requirement)
+psycopg2>=2.9  # PostgreSQL (if using PostgreSQL)
+sqlite3  # Default Django SQLite database (No need to install separately)
+
+# Serializer & Authentication
+djangorestframework-simplejwt>=5.3  # JWT authentication
+
+# Environment Variables
+python-dotenv>=1.0
+
+# Forms & Validations
+django-allauth>=0.58
+
+# Additional Utilities
+gunicorn>=21.2  # For production WSGI server
+whitenoise>=6.6  # For serving static files in production
