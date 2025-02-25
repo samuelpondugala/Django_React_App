@@ -38,13 +38,14 @@ jobs:
 
     - name: Collect Static Files
       run: |
-        
+        cd ..
         cd Django_React_App
         cd Backend
         python manage.py collectstatic --noinput
 
     - name: Run Tests
       run: |
+        cd ..
         cd Django_React_App
         cd Backend
         python manage.py test
