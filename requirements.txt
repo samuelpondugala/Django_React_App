@@ -3,19 +3,14 @@ Django>=4.2
 djangorestframework>=3.14
 django-cors-headers>=4.3
 
-# Database (Use as per requirement)
-psycopg2>=2.9  # PostgreSQL (if using PostgreSQL)
-
+# Database (Uncomment based on your database)
+psycopg2>=2.9  # PostgreSQL
+# mysqlclient>=2.1  # MySQL (if using MySQL)
 
 # Serializer & Authentication
-djangorestframework-simplejwt>=5.3  # JWT authentication
+djangorestframework-simplejwt>=5.2
+django-environ>=0.10  # For environment variables
 
-# Environment Variables
-python-dotenv>=1.0
-
-# Forms & Validations
-django-allauth>=0.58
-
-# Additional Utilities
-gunicorn>=21.2  # For production WSGI server
-whitenoise>=6.6  # For serving static files in production
+# Frontend & Other Utilities
+whitenoise>=6.6  # For serving static files
+gunicorn>=20.1  # Production WSGI server
