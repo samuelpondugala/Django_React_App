@@ -41,6 +41,7 @@ jobs:
         cd ..
         cd Django_React_App
         cd Backend
+        mkdir -p staticfiles
         python manage.py collectstatic --noinput
 
     - name: Run Tests
