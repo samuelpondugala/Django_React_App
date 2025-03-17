@@ -2,11 +2,29 @@ import * as React from 'react';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import {Controller} from 'react-hook-form'
 
-export default function MyDatePickerField() {
-  return (
+
+
+
+export default function MyDatePickerField(props) {
+    const {label, name, control}= props
+    return (
+
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DatePicker />
+        <Controller
+                name={name}
+                control={control}
+                render = {({
+                    feild: {onChange, value},
+                    
+        
+                }) => (
+                    <DatePicker label={label} />
+                )
+            }
+                />
+
     </LocalizationProvider>
   );
 }
