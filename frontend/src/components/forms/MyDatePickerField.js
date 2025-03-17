@@ -8,7 +8,7 @@ import {Controller} from 'react-hook-form'
 
 
 export default function MyDatePickerField(props) {
-    const {label, name, control}= props
+    const {label, width, name, control}= props
     return (
 
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -16,11 +16,11 @@ export default function MyDatePickerField(props) {
                 name={name}
                 control={control}
                 render = {({
-                    feild: {onChange, value},
+                    field: {onChange, value},
                     
         
                 }) => (
-                    <DatePicker label={label} />
+                    <DatePicker label={label} sx = {{width: {width}}}/>
                 )
             }
                 />

@@ -8,7 +8,7 @@ import {Controller} from 'react-hook-form'
 
 export default function MySelectField(props) {
     const [age, setAge] = React.useState('');
-    const {label, name, control}= props
+    const {label, width, name, control}= props
     const handleChange = (event) => {
         setAge(event.target.value);
   };
@@ -16,18 +16,19 @@ export default function MySelectField(props) {
   return (
     <div>
       
-      <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
+      <FormControl variant="standard" sx = {{width: {width}}}>
       <InputLabel id="demo-simple-select-filled-label">{label}</InputLabel>
       <Controller
         name={name}
         control={control}
         render = {({
-            feild: {onChange, value},
+            field: {onChange, value},
             fieldState: {error},
             formState,
 
         }) => (
             <Select
+                sx = {{width: {width}}}
                 labelId="demo-simple-select-filled-label"
                 id="demo-simple-select-filled"
                 value={age}
@@ -36,9 +37,9 @@ export default function MySelectField(props) {
                 <MenuItem value="">
                     <em>None</em>
                 </MenuItem>
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
+                <MenuItem value={10}>Open</MenuItem>
+                <MenuItem value={20}>In Progress</MenuItem>
+                <MenuItem value={30}>Completed</MenuItem>
         </Select>
         )
     }

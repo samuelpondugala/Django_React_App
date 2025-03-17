@@ -4,18 +4,19 @@ import {Controller} from 'react-hook-form'
 
 
 export default function MyTextField(props) {
-    const {label, placeholder, name, control}= props
+    const {label, width, placeholder, name, control}= props
     return (
         <Controller
         name={name}
         control={control}
         render = {({
-            feild: {onChange, value},
+            field: {onChange, value},
             fieldState: {error},
             formState,
 
         }) => (
             <TextField 
+                sx = {{width: {width}}}
                 id="standard-basic" 
                 label={label} 
                 variant="standard"
