@@ -16,7 +16,7 @@ const Create = () => {
         </Typography>
       </Box>
       <Box sx ={{display: 'flex', width: '100%', boxShadow: 3 ,padding: 4,flexDirection: 'column'}}>
-        <Box sx ={{display: 'flex', justifyContent: 'space-around'}}>
+        <Box sx ={{display: 'flex', justifyContent: 'space-around', marginBottom: '40px'}}>
           <MyTextField 
             label="Name" 
             name={"name"}

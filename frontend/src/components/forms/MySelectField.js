@@ -28,7 +28,7 @@ export default function MySelectField(props) {
 
         }) => (
             <Select
-                sx = {{width: {width}}}
+                
                 labelId="demo-simple-select-filled-label"
                 id="demo-simple-select-filled"
                 value={age}
@@ -40,7 +40,7 @@ export default function MySelectField(props) {
                 <MenuItem value={10}>Open</MenuItem>
                 <MenuItem value={20}>In Progress</MenuItem>
                 <MenuItem value={30}>Completed</MenuItem>
-        </Select>
+            </Select>
         )
     }
         />
