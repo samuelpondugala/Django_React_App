@@ -14,7 +14,7 @@ export default function MySelectField(props) {
   };
 
   return (
-    <div>
+    
       
       <FormControl variant="standard" sx = {{width: {width}}}>
       <InputLabel id="demo-simple-select-filled-label">{label}</InputLabel>
@@ -31,8 +31,8 @@ export default function MySelectField(props) {
                 
                 labelId="demo-simple-select-filled-label"
                 id="demo-simple-select-filled"
-                value={age}
-                onChange={handleChange}
+                value={value}
+                onChange={onChange}
                 >
                 <MenuItem value="">
                     <em>None</em>
@@ -47,6 +47,6 @@ export default function MySelectField(props) {
         
         
       </FormControl>
-    </div>
+    
   );
 }

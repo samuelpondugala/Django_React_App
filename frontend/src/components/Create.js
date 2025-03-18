@@ -4,12 +4,15 @@ import MyDatePickerField from './forms/MyDatePickerField'
 import MySelectField from './forms/MySelectField'
 import MyTextField from './forms/MyTextField'
 import MyMultiLineField from './forms/MyMultiLineField'
-import {useForm} from 'react-hook-form'
+import {Form, useForm} from 'react-hook-form'
 
 const Create = () => {
   const {handleSubmit, reset, setValue, control} = useForm()
+  const submission = (data) => console.log(data)
+  
   return (
     <div>
+      <form onSubmit={handleSubmit(submission)}>
       <Box sx ={{display: 'flex', backgroundColor: '#00003f', marginBottom: '10px'}}>
         <Typography sx = {{marginLeft: '20px', color: '#fff'}}>
           Create Records
@@ -29,14 +32,12 @@ const Create = () => {
             name="start_date"
             control={control}
             width ={'30%'}
-          
           />
           <MyDatePickerField
             label="End Date"
             name="end_date"
             control={control}
             width ={'30%'}
-          
           />
         </Box>
         <Box sx ={{display: 'flex', justifyContent: 'space-around'}}>
@@ -51,17 +52,21 @@ const Create = () => {
             label="Status"
             name="status"
             control={control}
+            placeholder = "Status"
             width ={'30%'}
-          
           />
           </Box>
-          <Box sx = {{width: '30%'}}>
+          <Box sx={{display:'flex', justifyContent:'start', marginTop:'40px'}}> 
+                <button type="submit" style={{backgroundColor: '#00003f', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer'}}>
+                   Submit
+                </button>
+          </Box>
 
-          </Box >
           
           
         
       </Box>
+      </form>
     </div>
   )
 }

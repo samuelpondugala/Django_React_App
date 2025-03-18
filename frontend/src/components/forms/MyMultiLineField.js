@@ -19,7 +19,7 @@ export default function MyMultiLineField(props) {
             id="standard-multiline-static"
             label={label}
             multiline
-            rows={4}
+            rows={1}
             
             variant="standard"
             placeholder = {placeholder}
